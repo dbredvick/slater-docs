@@ -23,7 +23,7 @@ yarn add @slaterjs/next
 or
 
 ```bash
-npm add @slaterjs/next
+npm install @slaterjs/next
 ```
 
 then create `pages/api/slater/[...slater].js` file with the following contents:
