@@ -1,4 +1,5 @@
 import { Tabs, Tab } from "nextra-theme-docs/tabs";
+import Callout from "nextra-theme-docs/callout";
 
 # Getting started
 
@@ -6,11 +7,14 @@ It's very easy to get started with Slater and deploy your first Next.js cron job
 
 ## Install Slater Vercel integration
 
-Head to [https://vercel.com/integrations/slater](https://vercel.com/integrations/slater) and click the "Add Integration" button. Select "all projects" and follow through the signup prompts.
+Head to <a className="underline" href="https://vercel.com/integrations/slater">vercel.com/integrations/slater</a> and click the "Add Integration" button. Select "all projects" and follow through the signup prompts.
 
 At the end, this will kick off an email to your email address associated with your Vercel account.
 
-You need to "claim" your account to finalize the integration by clicking the link in your email.
+<Callout>
+  You need to "claim" your account to finalize the integration by clicking the
+  link in your email.
+</Callout>
 
 ## Add Slater to your Next.js app
 
@@ -18,6 +22,7 @@ To add your first cron job in a Next.js app, we need to make some code changes.
 
 You'll also need to install Slater dependencies in your Next.js app.
 
+{/* prettier-ignore */}
 <Tabs items={["Yarn", "NPM"]} storageKey="selected-pkg-manager">
   <Tab>
     ```bash 
@@ -31,7 +36,7 @@ You'll also need to install Slater dependencies in your Next.js app.
   </Tab>
 </Tabs>
 
-then create `pages/api/slater/[...slater].js` file with the following contents:
+then create `pages/api/slater/[...slater].js` file with the following content:
 
 ```js filename="[...slater].js"
 const config = {
