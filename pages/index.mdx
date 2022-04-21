@@ -1,3 +1,5 @@
+import { Tabs, Tab } from "nextra-theme-docs/tabs";
+
 # Getting started
 
 It's very easy to get started with Slater and deploy your first Next.js cron job.
@@ -16,15 +18,18 @@ To add your first cron job in a Next.js app, we need to make some code changes.
 
 You'll also need to install Slater dependencies in your Next.js app.
 
-```bash
-yarn add @slaterjs/next
-```
-
-or
-
-```bash
-npm install @slaterjs/next
-```
+<Tabs items={["Yarn", "NPM"]} storageKey="selected-pkg-manager">
+  <Tab>
+    ```bash 
+    yarn add @slaterjs/next
+    ```
+    </Tab>
+  <Tab>
+    ```bash
+    npm install @slaterjs/next
+    ```
+  </Tab>
+</Tabs>
 
 then create `pages/api/slater/[...slater].js` file with the following contents:
 
