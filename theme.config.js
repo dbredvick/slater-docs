@@ -8,6 +8,7 @@ export default {
   search: true,
   unstable_flexsearch: true,
   unstable_staticImage: true,
+  unstable_codehike: true,
   darkMode: true,
   footer: true,
   footerText: `${new Date().getFullYear()} © Slater`,
