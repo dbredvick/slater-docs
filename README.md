@@ -60,4 +60,4 @@ export default slater(config);
 
 ## Deploy to production
 
-Slater only picks up production changes, so make sure you're pushing your Vercel changes all the way to produciton.
+Slater only picks up production changes, so make sure you're pushing your Vercel changes all the way to production.
