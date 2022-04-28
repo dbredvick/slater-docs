@@ -29,6 +29,8 @@ npm install @slaterjs/next
 then create `pages/api/slater/[...slater].js` file with the following contents:
 
 ```js filename="[...slater].js"
+import { slater } from "@slaterjs/next";
+
 const config = {
   queues: [
     {
